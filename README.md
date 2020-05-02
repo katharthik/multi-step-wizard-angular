@@ -1,5 +1,16 @@
 # MultiStepWizardAngular
 
+✅1. A multi-step registration wizard (using reactive forms and dynamic form fields in angular).
+✅2. One of the fields should have autocomplete
+
+(TODO)
+
+3.  Users should be able to go and back forth between each step, through the browser back and forward buttons. Also, add previous and next buttons to do the same.
+
+✅4. When the user goes back, all the previously entered fields, should retain the values, in them.
+
+5.  (Optional) If you can add test specs, that would be great !
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ## Development server
