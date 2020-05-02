@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-registration-step3',
   templateUrl: './registration-step3.component.html',
-  styleUrls: ['./registration-step3.component.css']
+  styleUrls: ['./registration-step3.component.css'],
 })
 export class RegistrationStep3Component implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() regForm: FormGroup;
+  formSubmitted: boolean = false;
 
-  ngOnInit(): void {
+  ngOnInit() {}
+
+  submit() {
+    console.log('submitted');
+    console.log(this.regForm.value);
+    this.formSubmitted = true;
+    alert('Your form has been submitted!');
   }
-
 }
